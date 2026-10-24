@@ -134,8 +134,7 @@ export class Renderer {
     const span = SIM.arenaRadius * 2 * ARENA_MARGIN;
     const fitScale = Math.min(availableWidth, availableHeight) / span;
     this.root.scale.set(fitScale);
-
-this.root.position.set(
+    this.root.position.set(
   width / 2 - (STAGE.width / 2) * fitScale,
   inset.top + availableHeight / 2 - (STAGE.height / 2) * fitScale,
 );
