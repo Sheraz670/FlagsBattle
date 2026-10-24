@@ -135,8 +135,8 @@ export class Renderer {
     const fitScale = Math.min(availableWidth, availableHeight) / span;
     this.root.scale.set(fitScale);
     this.root.position.set(
-  (width - STAGE.width * fitScale) / 2,
-  inset.top + (availableHeight - STAGE.height * fitScale) / 2,
+  width / 2,
+  inset.top + availableHeight / 2,
 );
   }
 }
